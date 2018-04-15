@@ -1,0 +1,576 @@
+/*头部*/
+.head-box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 2.5rem;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.head-logo{
+    float: left;
+    max-width: 80%;
+    height: 1.9rem;
+    margin: .3rem 0 .3rem 1rem;
+}
+
+.head-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../images/menu-bg.png") center center no-repeat;
+    background-size: 30% auto;
+}
+
+.head-title{
+    display: inline-block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: .9rem;
+    color: #000;
+}
+
+/*首页*/
+
+.swiper-index img {
+    width: 100%;
+}
+
+.swiper-index .swiper-pagination-bullet-active {
+    background: #e60a37;
+}
+
+.link-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem 0;
+    overflow: hidden;
+}
+
+.link-item{
+    width: 3rem;
+    height: 4.5rem;
+    margin: 0 .7rem;
+}
+
+.link-icon{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.link-course{
+    background-image: url("../images/courseIcon.png");
+}
+
+.link-tutor{
+    background-image: url("../images/courseIcon.png");
+}
+
+.link-plate{
+    background-image: url("../images/courseIcon.png");
+}
+
+.link-ask{
+    background-image: url("../images/courseIcon.png");
+}
+
+.link-title{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: .6rem;
+    color: #111;
+}
+.index-box{
+    border-top: 1px solid #eee;
+}
+
+.custom-tip{
+    margin-top: .6rem;
+    font-size: .9rem;
+    color: #e60a37;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.custom-short{
+    font-size: .6rem;
+    color: #2c2c2c;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.custom-cont{
+    margin-top: .8rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.custom-con{
+    display: inline-block;
+    width: 7rem;
+    height: 9.5rem;
+    margin: .5rem 0 .5rem .9rem;
+    padding: 0 .5rem;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 0 .5rem #ccc;
+    background-color: #fff;
+}
+
+.custom-title{
+    height: 2.5rem;
+    line-height: 2.5rem;
+    white-space: nowrap;
+    font-size: .8rem;
+    color: #e60a37;
+    overflow: hidden;
+}
+
+.custom-suit{
+    height: 1.6rem;
+    line-height: .8rem;
+    font-size: .5rem;
+    color: #111;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.custom-circle{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    margin: .6rem 0;
+    border-radius: 100%;
+    background-color: #f8f8f8;
+    background-position: center center;
+    background-size: 60% 60%;
+    background-repeat: no-repeat;
+}
+
+.circle-protocol{
+    background-image: url("../images/classIcon.png");
+}
+
+.advicer-con{
+    width: 90%;
+    margin: 1rem auto 0;
+    overflow: hidden;
+}
+
+.advicer-img{
+    float: left;
+    width: 6rem;
+    height: 6rem;
+}
+
+.advicer-name{
+    float: right;
+    width: 60%;
+    max-height: 2.4rem;
+    line-height: 1.2rem;
+    font-size: .8rem;
+    color: #111;
+}
+
+.advicer-btnBox{
+    float: right;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 2.4rem;
+}
+
+.advicer-btn{
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin: .2rem .4rem .2rem 0;
+    padding: 0 .2rem;
+    text-align: center;
+    font-size: .6rem;
+    color: #898989;
+    background-color: #f5f5f5;
+    border-radius: .2rem;
+}
+.advicer-more{
+    display: block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: .7rem;
+    font-weight: bold;
+    color: #111;
+    text-align: center;
+}
+
+.stu-con{
+    width: 12.5rem;
+    height: 15.5rem;
+    padding: .5rem;
+    text-align: left;
+}
+
+.stu-top{
+    display: flex;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    white-space: nowrap;
+}
+.stu-logo{
+    float: left;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 100%;
+}
+.stu-name{
+    float: left;
+    width: 3.7rem;
+    height: 1.3rem;
+    padding-left: .2rem;
+    font-size: .8rem;
+    color: #111;
+    overflow: hidden;
+}
+.stu-school{
+    float: left;
+    width: 7.3rem;
+    padding-left: .2rem;
+    font-size: .6rem;
+    color: #333;
+    line-height: 1.5rem;
+    overflow: hidden;
+}
+.stu-course{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: .7rem;
+    color: #111;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.stu-sort{
+    padding: 0 .3rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: .6rem;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.stu-short{
+    margin: .5rem 0;
+    height: 10rem;
+    line-height: 1rem;
+    font-size: .6rem;
+    color: #333;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.index-tip{
+    margin-top: 1.5rem;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .6rem;
+    color: #333;
+    text-align: center;
+}
+
+.index-regist{
+    display: block;
+    width: 90%;
+    height: 2rem;
+    line-height: 2rem;
+    margin: 1rem auto;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: .1rem;
+    background-color: #e60a37;
+}
+
+.foot-box{
+    height: 4.8rem;
+    background-color: #f5f5f5;
+}
+.foot-btnBox{
+    display: flex;
+    justify-content:center;
+}
+
+.foot-btn{
+    height: .6rem;
+    line-height: .6rem;
+    padding: 0 .5rem;
+    margin: 1rem 0 .5rem 0;
+    font-size: .6rem;
+    color: #333;
+    border-right: 1px solid #ccc;
+}
+
+.foot-btn:last-child{
+    border:none
+}
+.foot-word{
+    height: 2rem;
+    line-height: 1rem;
+    font-size: .6rem;
+    color: #aaa;
+    text-align: center;
+}
+
+
+/*modal*/
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index:10;
+}
+.modal-bg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index:11;
+    background: #000;
+    opacity: .2;
+}
+
+.modal-box{
+    position: fixed;
+    z-index: 12;
+    left: 50%;
+    top: 8rem;
+    margin-left: -43%;
+    width: 86%;
+    border-radius: .5rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.modal-text{
+    min-height: 2.5rem;
+    line-height: .7rem;
+    text-align: center;
+    font-size: .8rem;
+    color: #000;
+    padding: 1.5rem .5rem;
+}
+
+.modal-do{
+    display: flex;
+    height: 2rem;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.modal-btn{
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-size: .75rem;
+    color: #999;
+}
+
+.modal-btn#confirm{
+    color: #e60a37;
+}
+
+/*侧边导航*/
+.sider-box{
+    position: fixed;
+    left: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.sider-left{
+    float: left;
+    width: 10%;
+    height: 100%;
+}
+
+.sider-right{
+    position: relative;
+    float: right;
+    width: 90%;
+    height: 100%;
+}
+.sider-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    background-color: #000;
+    opacity: .9;
+}
+
+.sider-cont{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 12;
+    padding-top: 2rem;
+}
+
+.sider-head{
+    position: relative;
+    height: 4rem;
+}
+.sider-logo{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    border-radius: 100%;
+    background-color: #3b3b3c;
+    overflow: hidden;
+}
+
+.sider-logo img{
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+}
+
+.sider-search{
+    position: absolute;
+    right: 3rem;
+    top: 1.2rem;
+    z-index: 13;
+    width: 1.6rem;
+    height: 1.6rem;
+    background:url("../images/search-icon.png") center center no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #3b3b3c;
+    border-radius: 100%;
+}
+
+.sider-login{
+    display: block;
+    margin: .5rem 0 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+}
+
+.sider-name{
+    margin: .5rem 0 1.5rem;
+    max-height: 3rem;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    font-size: .9rem;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sider-btn{
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 4rem;
+    color: #fff;
+    font-size: .75rem;
+    background-position: 2.2rem center;
+    background-repeat: no-repeat;
+    background-size: 1rem auto;
+}
+.sider-btn.active{
+    background-color: #e60a37;
+}
+
+.sider-index{
+    background-image: url("../images/index-icon.png");
+}
+
+.sider-course{
+    background-image: url("../images/course-icon.png");
+}
+
+.sider-tutor{
+    background-image: url("../images/tutor-icon.png");
+}
+
+.sider-stu{
+    background-image: url("../images/stu-icon.png");
+}
+
+.sider-ask{
+    background-image: url("../images/ask-icon.png");
+}
+
+.sider-consult{
+    background-image: url("../images/consult-icon.png");
+}
+
+.sider-about{
+    background-position: 2.4rem center;
+    background-size: .7rem auto;
+    background-image: url("../images/about-icon.png");
+}
+
+.sider-join{
+    background-image: url("../images/join-icon.png");
+}
+
+/*课程服务*/
+.in-banner{
+    display: block;
+}
+.in-banner img{
+    width: 100%;
+}
+.protocol-box{
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+.protocol-item{
+    display: inline-block;
+    width: 3rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0 .4rem;
+    font-size: .6rem;
+    color: #595959;
+    text-align: center;
+}
+.protocol-item.active{
+    color: #e60a37;
+    border-bottom: .1rem solid #e60a37;
+}
+
+/*public*/
+.none{
+    display: none;
+}
+.mt2p5{
+    margin-top: 2.5rem;
+}
+.scrollNone::-webkit-scrollbar{
+    display:none;
+}
