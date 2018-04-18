@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
+    <title>导师列表</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/yixin.css">
+</head>
+<body>
+<div class="head-box">
+    <div class="head-title">导师资源</div>
+    <div class="head-btn"></div>
+</div>
+<div class="mt2p5"></div>
+<a href="" class="in-banner">
+    <img src="images/tutorBanner.png" alt="">
+</a>
+<div class="tutor-sider scrollNone">
+    <div class="tutor-item active">全部</div>
+    <div class="tutor-item">快消</div>
+    <div class="tutor-item">互联网</div>
+    <div class="tutor-item">营销</div>
+    <div class="tutor-item">人力资源</div>
+    <div class="tutor-item">销售</div>
+</div>
+<div id="wrapper">
+    <div class="tutor-box">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+    </div>
+    <div class="tutor-box">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+    </div>
+    <div class="tutor-box">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+    </div>
+    <div class="tutor-box">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+    </div>
+</div>
+<div class="weui-loadmore">
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<div class="none-hint">亲，没有更多了哦...</div>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-head">
+                <div class="sider-logo">
+                    <img src="images/vip-default.png" alt="">
+                </div>
+                <a href="" class="sider-search"></a>
+            </div>
+            <!--未登录-->
+            <a href="" class="sider-login">点击登录</a>
+            <!--已登录-->
+            <!--<div class="sider-name">王晓明王晓明</div>-->
+            <a href="" class="sider-btn sider-index">首页</a>
+            <a href="" class="sider-btn sider-course">课程服务</a>
+            <a href="" class="sider-btn sider-tutor active">导师资源</a>
+            <a href="" class="sider-btn sider-stu">学员战绩</a>
+            <a href="" class="sider-btn sider-ask">求职咨询</a>
+            <a href="" class="sider-btn sider-consult">海帆顾问</a>
+            <a href="" class="sider-btn sider-about">关于海帆</a>
+            <a href="" class="sider-btn sider-join">加入海帆</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        var loading = false;  //状态标记
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+            setTimeout(function () {
+                var str = '<div class="tutor-box"><img src="images/tutorLogo.png" alt="" class="tutor-logo"><div class="tutor-name">洪雅涵</div><div class="tutor-tag"><div class="tutor-btn">快消</div><div class="tutor-btn">咨询</div></div></div>';
+                $("#wrapper").append(str);
+                loading = false;
+            }, 1500);   //模拟延迟
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
+    <title>我的提问</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/yixin.css">
+</head>
+<body>
+<div class="head-box">
+    <div class="head-title">会员中心</div>
+    <div class="head-btn"></div>
+</div>
+<div class="mt2p5"></div>
+<div class="center-banner">
+    <img src="images/centerBanner.png" alt="" class="center-bannerImg">
+    <div class="center-imgBox">
+        <img src="images/offerIcon.png" alt="">
+    </div>
+    <div class="center-tip">Hi,Saranxz <span>已认证导师</span></div>
+</div>
+<div class="center-sider">
+    <div class="center-item">我的信息</div>
+    <div class="center-item">成为导师</div>
+    <div class="center-item active">我的提问</div>
+</div>
+<div id="wrapper">
+    <div class="ques-box">
+        <div class="ques-top">
+            <div class="ques-name">王同学提问:</div>
+            <div class="ques-title">大学经历空白，春招近在眼前，如何拯救我的简历？</div>
+        </div>
+        <div class="ques-key">海帆解答:</div>
+        <div class="ques-cont">春招战斗全面升级，简历也要更加优秀，如果说秋招时大家都是小白零经验，那么在春招，你可能会遇到一批求职老油条。</div>
+        <div class="ques-thing">提问：王同学   2018-01-01   14:00:00</div>
+    </div>
+    <div class="ques-box">
+        <div class="ques-top">
+            <div class="ques-name">王同学提问:</div>
+            <div class="ques-title">大学经历空白，春招近在眼前，如何拯救我的简历？</div>
+        </div>
+        <div class="ques-key">海帆解答:</div>
+        <div class="ques-cont">春招战斗全面升级，简历也要更加优秀，如果说秋招时大家都是小白零经验，那么在春招，你可能会遇到一批求职老油条。</div>
+        <div class="ques-thing">提问：王同学   2018-01-01   14:00:00</div>
+    </div>
+</div>
+<div class="weui-loadmore">
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<div class="none-hint">亲，没有更多了哦...</div>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-head">
+                <div class="sider-logo">
+                    <img src="images/vip-default.png" alt="">
+                </div>
+                <a href="" class="sider-search"></a>
+            </div>
+            <!--未登录-->
+            <a href="" class="sider-login">点击登录</a>
+            <!--已登录-->
+            <!--<div class="sider-name">王晓明王晓明</div>-->
+            <a href="" class="sider-btn sider-index">首页</a>
+            <a href="" class="sider-btn sider-course">课程服务</a>
+            <a href="" class="sider-btn sider-tutor">导师资源</a>
+            <a href="" class="sider-btn sider-stu">学员战绩</a>
+            <a href="" class="sider-btn sider-ask active">求职咨询</a>
+            <a href="" class="sider-btn sider-consult">海帆顾问</a>
+            <a href="" class="sider-btn sider-about">关于海帆</a>
+            <a href="" class="sider-btn sider-join">加入海帆</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        var loading = false;  //状态标记
+        //列表加载更多js到时候问一下志伟
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+            setTimeout(function () {
+                var str = '<div class="ques-box"><div class="ques-top"><div class="ques-name">王同学提问:</div><div class="ques-title">大学经历空白，春招近在眼前，如何拯救我的简历？</div></div><div class="ques-key">海帆解答:</div><div class="ques-cont">春招战斗全面升级，简历也要更加优秀，如果说秋招时大家都是小白零经验，那么在春招，你可能会遇到一批求职老油条。</div><div class="ques-thing">提问：王同学   2018-01-01   14:00:00</div></div>';
+                $("#wrapper").append(str);
+                loading = false;
+            }, 1500);   //模拟延迟
+        });
+    })
+</script>
+</body>
+</html>

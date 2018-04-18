@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
+    <title>联系方式</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/yixin.css">
+</head>
+<body>
+<div class="head-box">
+    <div class="head-title">联系方式</div>
+    <div class="head-btn"></div>
+</div>
+<div class="mt2p5"></div>
+<a href="" class="in-banner">
+    <img src="images/contactBanner.png" alt="">
+</a>
+<div class="about-sider">
+    <div class="about-item">最新动态</div>
+    <div class="about-item">机构简介</div>
+    <div class="about-item">机构荣誉</div>
+    <div class="about-item active">联系方式</div>
+</div>
+<div class="contact-box">
+    <div class="contact-item">地址：厦门市思明区后埭溪路28号皇达大厦23G</div>
+    <div class="contact-item">邮编:362000</div>
+    <div class="contact-item">服务热线：0592-5126366/13328788050</div>
+    <div class="contact-item">网址：http://www.hfzcxm.com</div>
+    <div class="contact-item">邮箱：3145169108@qq.com</div>
+    <div class="focus-title">关注我们</div>
+    <div class="focus-con">
+        <div class="focus-btn focus-wechat">
+            <img class="none" src="images/qr1.jpg" alt="">
+        </div>
+        <div class="focus-btn focus-wechat">
+            <img class="none" src="images/qr2.jpg" alt="">
+        </div>
+        <div class="focus-btn focus-qq">
+            <img class="none" src="images/qr3.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="consult-box">
+    <div class="consult-bg"></div>
+    <div class="consult-con">
+        <img src="images/qrcode.png" alt="" class="consult-img">
+        <div class="consult-tip">
+            扫一扫，关注二维码<br>
+            获得顶级专属服务
+        </div>
+        <div class="consult-exit"></div>
+    </div>
+</div>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-head">
+                <div class="sider-logo">
+                    <img src="images/vip-default.png" alt="">
+                </div>
+                <a href="" class="sider-search"></a>
+            </div>
+            <!--未登录-->
+            <a href="" class="sider-login">点击登录</a>
+            <!--已登录-->
+            <!--<div class="sider-name">王晓明王晓明</div>-->
+            <a href="" class="sider-btn sider-index">首页</a>
+            <a href="" class="sider-btn sider-course">课程服务</a>
+            <a href="" class="sider-btn sider-tutor">导师资源</a>
+            <a href="" class="sider-btn sider-stu">学员战绩</a>
+            <a href="" class="sider-btn sider-ask">求职咨询</a>
+            <a href="" class="sider-btn sider-consult">海帆顾问</a>
+            <a href="" class="sider-btn sider-about active">关于海帆</a>
+            <a href="" class="sider-btn sider-join">加入海帆</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        //点击查看二维码
+        $("body").on("click",".focus-btn",function(){
+            var url = $(this).find(".none").attr('src');
+            $(".consult-img").attr("src",url);
+            $(".consult-box").show();
+        });
+        //关闭弹窗
+        $(".consult-exit").on("click",function () {
+            $(".consult-box").hide();
+        })
+    })
+</script>
+</body>
+</html>

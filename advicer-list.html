@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
+    <title>顾问咨询</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" href="css/yixin.css">
+</head>
+<body>
+<div class="head-box">
+    <div class="head-title">顾问咨询</div>
+    <div class="head-btn"></div>
+</div>
+<div class="mt2p5"></div>
+<a href="" class="in-banner">
+    <img src="images/advicerBanner.png" alt="">
+</a>
+<div class="tutor-sider scrollNone">
+    <div class="tutor-item active">全部</div>
+    <div class="tutor-item">快消</div>
+    <div class="tutor-item">互联网</div>
+    <div class="tutor-item">营销</div>
+    <div class="tutor-item">人力资源</div>
+    <div class="tutor-item">销售</div>
+</div>
+<div id="wrapper">
+    <div class="tutor-box">
+        <img src="images/qrcode.png" class="none" alt="">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+        <div class="consult-short">本科及研究生期间曾参与多家猎头及人力咨询行业公司实习。从专业HR从业者的角度提供从求职前期准备、到简历修改、面试技巧、offer选择等方面的指导。</div>
+    </div>
+    <div class="tutor-box">
+        <img src="images/tutorLogo.png" class="none" alt="">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+        <div class="consult-short">本科及研究生期间曾参与多家猎头及人力咨询行业公司实习。从专业HR从业者的角度提供从求职前期准备、到简历修改、面试技巧、offer选择等方面的指导。</div>
+    </div>
+    <div class="tutor-box">
+        <img src="images/qrcode.png" class="none" alt="">
+        <img src="images/tutorLogo.png" alt="" class="tutor-logo">
+        <div class="tutor-name">洪雅涵</div>
+        <div class="tutor-tag">
+            <div class="tutor-btn">快消</div>
+            <div class="tutor-btn">咨询</div>
+        </div>
+        <div class="consult-short">本科及研究生期间曾参与多家猎头及人力咨询行业公司实习。从专业HR从业者的角度提供从求职前期准备、到简历修改、面试技巧、offer选择等方面的指导。</div>
+    </div>
+</div>
+<div class="weui-loadmore">
+    <i class="weui-loading"></i>
+    <span class="weui-loadmore__tips">正在加载</span>
+</div>
+<div class="none-hint">亲，没有更多了哦...</div>
+<div class="consult-box">
+    <div class="consult-bg"></div>
+    <div class="consult-con">
+        <img src="images/qrcode.png" alt="" class="consult-img">
+        <div class="consult-tip">
+            扫一扫，关注二维码<br>
+            获得顶级顾问专属服务
+        </div>
+        <div class="consult-exit"></div>
+    </div>
+</div>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-head">
+                <div class="sider-logo">
+                    <img src="images/vip-default.png" alt="">
+                </div>
+                <a href="" class="sider-search"></a>
+            </div>
+            <!--未登录-->
+            <a href="" class="sider-login">点击登录</a>
+            <!--已登录-->
+            <!--<div class="sider-name">王晓明王晓明</div>-->
+            <a href="" class="sider-btn sider-index">首页</a>
+            <a href="" class="sider-btn sider-course">课程服务</a>
+            <a href="" class="sider-btn sider-tutor">导师资源</a>
+            <a href="" class="sider-btn sider-stu">学员战绩</a>
+            <a href="" class="sider-btn sider-ask">求职咨询</a>
+            <a href="" class="sider-btn sider-consult active">海帆顾问</a>
+            <a href="" class="sider-btn sider-about">关于海帆</a>
+            <a href="" class="sider-btn sider-join">加入海帆</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/jquery-weui.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+    $(function () {
+        var loading = false;  //状态标记
+        $(document.body).infinite().on("infinite", function () {
+            if (loading) return;
+            loading = true;
+            setTimeout(function () {
+                var str = '<div class="tutor-box"><img src="images/qrcode.png" class="none" alt=""><img src="images/tutorLogo.png" alt="" class="tutor-logo"><div class="tutor-name">洪雅涵</div><div class="tutor-tag"><div class="tutor-btn">快消</div><div class="tutor-btn">咨询</div></div><div class="consult-short">本科及研究生期间曾参与多家猎头及人力咨询行业公司实习。从专业HR从业者的角度提供从求职前期准备、到简历修改、面试技巧、offer选择等方面的指导。</div></div>';
+                $("#wrapper").append(str);
+                loading = false;
+            }, 1500);   //模拟延迟
+        });
+        //点击查看二维码
+        $("body").on("click",".tutor-box",function(){
+            var url = $(this).find(".none").attr('src');
+            $(".consult-img").attr("src",url);
+            $(".consult-box").show();
+        });
+        //关闭弹窗
+        $(".consult-exit").on("click",function () {
+            $(".consult-box").hide();
+        })
+    })
+</script>
+</body>
+</html>
