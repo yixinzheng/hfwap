@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
+    <title>会员注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/yixin.css">
+</head>
+<body>
+<div class="head-box">
+    <div class="head-title">会员注册</div>
+    <div class="head-btn"></div>
+</div>
+<div class="mt2p5"></div>
+<div class="course-line"></div>
+<div class="vip-box">
+    <div class="vip-con">
+        <input type="text" class="vip-input" placeholder="手机号">
+    </div>
+    <div class="vip-con">
+        <input type="text" class="vip-input" placeholder="用户名">
+    </div>
+    <div class="vip-con">
+        <input type="text" class="vip-input vip-code" placeholder="验证码">
+        <div class="vip-hint vip-vali">获取验证码</div>
+        <div class="vip-hint vip-gray"><span id="time">59</span>S后重试</div>
+    </div>
+    <div class="vip-con">
+        <input type="password" class="vip-input" placeholder="设置密码">
+    </div>
+    <div class="vip-con">
+        <input type="password" class="vip-input" placeholder="确认密码">
+    </div>
+    <div class="vip-tip">点击[注册]，即代表你同意《用户协议》</div>
+    <button type="submit" class="ques-sub vip-sub">注册</button>
+</div>
+<div class="modal">
+    <div class="modal-bg"></div>
+    <div class="modal-box">
+        <div class="modal-text">手机不存在</div>
+        <div class="modal-do">
+            <div class="modal-btn" id="sure">确定</div>
+        </div>
+    </div>
+</div>
+<div class="sider-box">
+    <div class="sider-left"></div>
+    <div class="sider-right">
+        <div class="sider-overlay"></div>
+        <div class="sider-cont">
+            <div class="sider-head">
+                <div class="sider-logo">
+                    <img src="images/vip-default.png" alt="">
+                </div>
+                <a href="" class="sider-search"></a>
+            </div>
+            <!--未登录-->
+            <a href="" class="sider-login">点击登录</a>
+            <!--已登录-->
+            <!--<div class="sider-name">王晓明王晓明</div>-->
+            <a href="" class="sider-btn sider-index">首页</a>
+            <a href="" class="sider-btn sider-course">课程服务</a>
+            <a href="" class="sider-btn sider-tutor">导师资源</a>
+            <a href="" class="sider-btn sider-stu">学员战绩</a>
+            <a href="" class="sider-btn sider-ask active">求职咨询</a>
+            <a href="" class="sider-btn sider-consult">海帆顾问</a>
+            <a href="" class="sider-btn sider-about">关于海帆</a>
+            <a href="" class="sider-btn sider-join">加入海帆</a>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/script.js"></script>
+<script>
+    var countdown=60;
+    function sendCode(){
+        var obj = $("#time");
+        settime(obj);
+    }
+    function settime(obj) { //发送验证码倒计时
+        if (countdown == 1) {
+            countdown = 60;
+            $(".vip-vali").show().siblings(".vip-gray").hide();
+            return;
+        } else {
+            countdown--;
+            obj.html(countdown);
+        }
+        setTimeout(function () {
+                settime(obj)
+            }
+            , 1000)
+    }
+    $(function () {
+        //验证码倒计时
+        $(".vip-vali").on('click',function () {
+            $(this).hide().siblings(".vip-gray").show();
+            sendCode();
+        });
+    })
+</script>
+</body>
+</html>

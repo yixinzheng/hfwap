@@ -6,6 +6,10 @@ $(function () {
     $(".modal-bg").on("click", function () {
         $(".modal").hide();
     });
+    //关闭modal
+    $("body").on('click',"#sure",function () {
+        $(".modal").hide();
+    });
     //开启导航
     $(".head-btn").on("click", function () {
         $(".sider-box").animate({left: "0"});

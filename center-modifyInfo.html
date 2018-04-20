@@ -4,41 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0，user-scaleble=no">
-    <title>我的信息</title>
+    <title>修改信息</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/yixin.css">
 </head>
 <body>
 <div class="head-box">
-    <div class="head-title">会员中心</div>
+    <div class="head-title">修改信息</div>
     <div class="head-btn"></div>
 </div>
 <div class="mt2p5"></div>
-<div class="center-banner">
-    <img src="images/centerBanner.png" alt="" class="center-bannerImg">
-    <div class="center-imgBox">
-        <img src="images/offerIcon.png" alt="">
+<div class="course-line"></div>
+<form class="vip-box">
+    <div class="vip-con">
+        <input type="text" name="wechat" class="vip-input" placeholder="微信号">
     </div>
-    <div class="center-tip">Hi,Saranxz <span>已认证导师</span></div>
-</div>
-<div class="center-sider">
-    <div class="center-item active">我的信息</div>
-    <div class="center-item">成为导师</div>
-    <div class="center-item">我的提问</div>
-</div>
-<div class="center-infoBox">
-    <div class="info-item">手机号：15912341234</div>
-    <div class="info-item">注册时间：2018-01-01  12:00:00</div>
-    <div class="info-item">
-        <div class="info-key">微信：暂无</div>
-        <div class="info-md">编辑</div>
+    <div class="vip-con">
+        <input type="text" name="email" class="vip-input" placeholder="邮箱">
     </div>
-    <div class="info-item">
-        <div class="info-key">邮箱：暂无</div>
-        <div class="info-md">编辑</div>
-    </div>
-    <div class="info-item">
-        <a href="" class="info-mdPwd">修改密码</a>
+    <button type="submit" class="ques-sub vip-login">确认</button>
+</form>
+<div class="modal none">
+    <div class="modal-bg"></div>
+    <div class="modal-box">
+        <div class="modal-text"></div>
+        <div class="modal-do">
+            <div class="modal-btn" id="sure">确定</div>
+        </div>
     </div>
 </div>
 <div class="sider-box">
@@ -60,18 +52,42 @@
             <a href="" class="sider-btn sider-course">课程服务</a>
             <a href="" class="sider-btn sider-tutor">导师资源</a>
             <a href="" class="sider-btn sider-stu">学员战绩</a>
-            <a href="" class="sider-btn sider-ask">求职咨询</a>
+            <a href="" class="sider-btn sider-ask active">求职咨询</a>
             <a href="" class="sider-btn sider-consult">海帆顾问</a>
-            <a href="" class="sider-btn sider-about active">关于海帆</a>
+            <a href="" class="sider-btn sider-about">关于海帆</a>
             <a href="" class="sider-btn sider-join">加入海帆</a>
         </div>
     </div>
 </div>
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/rem.js"></script>
 <script src="js/script.js"></script>
 <script>
+    var countdown=60;
+    function sendCode(){
+        var obj = $("#time");
+        settime(obj);
+    }
+    function settime(obj) { //发送验证码倒计时
+        if (countdown == 1) {
+            countdown = 60;
+            $(".vip-vali").show().siblings(".vip-gray").hide();
+            return;
+        } else {
+            countdown--;
+            obj.html(countdown);
+        }
+        setTimeout(function () {
+                settime(obj)
+            }
+            , 1000)
+    }
     $(function () {
+        //关闭弹窗
+        $("body").on('click',"#sure",function () {
+            $(".modal").hide();
+        });
     })
 </script>
 </body>
